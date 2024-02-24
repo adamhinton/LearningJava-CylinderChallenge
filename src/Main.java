@@ -5,7 +5,7 @@ public class Main {
 }
 
 class Circle{
-    protected double radius;
+    private double radius;
 
     public Circle(double radius) {
         if (radius < 0) {
@@ -20,12 +20,12 @@ class Circle{
     }
 
     public double getArea(){
-        return radius * Math.PI;
+        return radius * radius * Math.PI;
     }
 }
 
 class Cylinder extends Circle{
-    double height;
+    private double height;
 
     public Cylinder(double radius, double height) {
         super(radius);
